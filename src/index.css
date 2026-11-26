@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-canvas: #0B0F17;
+  --color-surface: #121826;
+  --color-surface-elevated: #172033;
+  --color-border-subtle: #1E293B;
+  --color-border-strong: #334155;
+  --color-ink-primary: #F8FAFC;
+  --color-ink-secondary: #94A3B8;
+  --color-ink-muted: #64748B;
+  --color-accent-cyan: #38BDF8;
+  --color-accent-indigo: #6366F1;
+}
+
+@layer base {
+  html {
+    background-color: #0B0F17;
+    color: #F8FAFC;
+    font-family: var(--font-sans);
+    color-scheme: dark;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  /* Optical compensation for dark mode legibility */
+  body {
+    letter-spacing: 0.005em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Subtle dark scrollbars for logs and JSON inspector */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0B0F17;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1E293B;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

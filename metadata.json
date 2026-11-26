@@ -1,0 +1,6 @@
+{
+  "name": "AI Ops Expert — Inbound Lead Qualifier & Tour Scheduler",
+  "description": "Interactive portfolio demonstration for Real Estate and Property Management lead response, grounded FAQ handling, and tour scheduling built by AI Ops Expert (aiopsexpert.com).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
